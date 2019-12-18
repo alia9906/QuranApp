@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="7"
+    android:layoutDirection="rtl">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete_aye_from_favorite"
+        android:src="@mipmap/ic_khatm_remove"
+        android:paddingLeft="10sp"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:paddingRight="30sp">
+    </ImageView>
+    <TextView
+        android:id="@+id/sura_properties"
+        android:layout_width="0dp"
+        android:layout_weight="7"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textDirection="rtl"
+        android:gravity="center"
+        android:text="fsdfsd">
+    </TextView>
+
+</LinearLayout>

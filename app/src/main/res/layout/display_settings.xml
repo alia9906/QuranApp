@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:weightSum="100"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:visibility="invisible"
+            android:layout_gravity="center">
+
+        </ImageView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:weightSum="100"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="28"
+                android:visibility="invisible">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="40"
+                android:layout_height="0dp"
+                android:text="@string/brightness"
+                android:gravity="center"
+                style="@style/bold_title"
+                ></TextView>
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/brightness_seek_bar"
+            android:layout_weight="90"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:min="0"
+            android:progress="50"
+            android:layout_gravity="center">
+
+        </androidx.appcompat.widget.AppCompatSeekBar>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/play_sound_in_back_settings"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:weightSum="100"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:visibility="invisible"
+            android:layout_gravity="center">
+
+        </ImageView>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="90"
+            android:weightSum="100"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="24"
+                android:visibility="invisible">
+
+            </TextView>
+
+
+        </LinearLayout>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:padding="20sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/night_mode_check_box"
+            android:text="@string/nihtmode"
+            style="@style/bold_title"
+            android:layoutDirection="ltr"
+            android:textDirection="rtl"
+            android:checked="false">
+        </CheckBox>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/keep_screen_on_settings"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:weightSum="100"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:visibility="invisible"
+            android:layout_gravity="center">
+
+        </ImageView>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="90"
+            android:weightSum="100"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="24"
+                android:visibility="invisible">
+
+            </TextView>
+        </LinearLayout>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/keep_screen_check_box"
+            android:checked="true"
+            android:padding="20sp"
+            android:text="@string/keep_screen_on"
+            android:layoutDirection="ltr"
+            style="@style/bold_title"
+            android:textDirection="rtl">
+        </CheckBox>
+    </LinearLayout>
+
+</LinearLayout>

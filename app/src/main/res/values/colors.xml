@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FbFbFb</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="item_color_one">#D81B60</color>
+    <color name="item_color_two">#008577</color>
+    <color name="suraList">#F6E8C5</color>
+    <color name="suraListPrimary">#FFF09D</color>
+    <color name="suraTextBackground">#E4E2AF</color>
+    <color name="suraText">#010100</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#36956F</color>
+</resources>

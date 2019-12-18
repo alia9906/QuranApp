@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuraTextActivity">
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="12"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/top_pannel"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="#FFFFFFFF"
+            android:weightSum="15"
+            android:layoutDirection="rtl"
+            >
+
+            <ImageButton
+                android:id="@+id/go_full_screen"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="#a9a9a9"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_drawer_full_screen">
+
+            </ImageButton>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="match_parent"
+                android:src="@drawable/left_notch">
+
+            </ImageView>
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_ab_ayeh">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:id="@+id/cur_aye_num"
+                    ></TextView>
+
+            </FrameLayout>
+           <ImageView
+               android:layout_width="0dp"
+               android:layout_weight="4"
+               android:layout_height="match_parent"
+               android:src="@drawable/right_notch">
+
+           </ImageView>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:background="#a9a9a9">
+
+            </ImageView>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="11"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="88dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#a9a9a9"
+            android:layoutDirection="ltr"
+            android:id="@+id/seek_bar"
+            android:weightSum="10"
+            >
+
+            <SeekBar
+                android:id="@+id/audio_seek"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:max="1000"
+                android:progress="0"></SeekBar>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:id="@+id/seek_text"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="00:00">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layoutDirection="ltr"
+            android:id="@+id/audio_pannel"
+            android:background="#A9A9A9"
+            android:weightSum="5">
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/stop"
+                android:id="@+id/stop_sound"
+                android:layout_gravity="center"
+                android:background="#00000000">
+            </ImageButton>
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/shuffle_once"
+                android:id="@+id/shuffle"
+                android:layout_gravity="bottom"
+                android:background="#00000000">
+            </ImageButton>
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/play"
+                android:id="@+id/play_pause"
+                android:layout_gravity="center"
+                android:background="#00000000">
+            </ImageButton>
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_settings_audio_sura"
+                android:id="@+id/sound_settings_in_sura"
+                android:layout_gravity="center"
+                android:background="#00000000">
+            </ImageButton>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/sound_type"
+                android:textStyle="bold"
+                android:text="@string/tartil"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center">
+
+            </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:padding="25sp"
+        android:id="@+id/exit_full_screen"
+        android:layout_gravity="right|bottom"
+        android:visibility="gone"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_ab_full_screen_out">
+
+    </ImageButton>
+
+</FrameLayout>

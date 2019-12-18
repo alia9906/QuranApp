@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Quran</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chhose">انتخاب</string>
+    <string name="cancle">انصراف</string>
+    <string name="confirm">تایید</string>
+    <string name="sura_name">نام سوره</string>
+    <string name="number_sura">شماره</string>
+    <string name="color_erab">رنگ اعراب</string>
+    <string name="nozol">نزول</string>
+    <string name="joz">جزء</string>
+    <string name="hezb">حزب</string>
+    <string name="download">دانلود</string>
+    <string name="download_message">صوت مورد نظر وجود ندارد . آیا مایل به دانلود آن هستید ؟</string>
+    <string name="go_to_aye">برو به آیه</string>
+    <string-array name="download_status">
+        <item name ="empty">صف دانلود خالی</item>
+    </string-array>
+    <string name="favorite">شخصی</string>
+    <string name="list">فهرست</string>
+    <string name="arabic_sample">بسم الله الرحمان الرحیم</string>
+    <string name="farsi_sample">به نام خداوند بخشنده و مهربان</string>
+    <string name="left_switch">ترتیل</string>
+    <string name="right_switch">تحدیر</string>
+    <string name="tartil">ترتیل</string>
+    <string name="tahdir">تحدیر</string>
+    <string name="search_in_farsi">جستجو</string>
+    <string name="show_quran">نمایش قرآن</string>
+    <string name="show_quran_sub">نوع قلم ها, نمایش ترجمه</string>
+    <string name="play_sound">پخش صوت</string>
+    <string name="play_sound_sub">بلندی صدا, صوت پیش فرض, پخش صوت در پیش زمینه</string>
+    <string name="display">صفحه نمایش</string>
+    <string name="display_sub">نور صفحه, حالت شب, روشن نگه داشتن صفحه نمایش</string>
+    <string name="about">درباره نرم افزار</string>
+    <string name="about_sub">ویرایش 1.4</string>
+    <string name="share">اشتراک گزاری برنامه</string>
+    <string name="share_sub">فرستادن فایل نصب برنامه</string>
+    <string name="ghalam_arabi">قلم عربی</string>
+    <string name="ghalam_arabi_sub">فونت , رنگ , اندازه</string>
+    <string name="ghalam_farsi">قلم فارسی</string>
+    <string name="ghalam_farsi_sub">فونت , رنگ , اندازه</string>
+    <string name="show_tarjome">نمایش ترجمه</string>
+    <string name="color">رنگ قلم</string>
+    <string name="font">فونت</string>
+    <string name="size">اندازه</string>
+    <string name="sound_volume">بلندی صدا</string>
+    <string name="play_in_back">پخش صوت در پیش زمینه در نوار اعلان</string>
+    <string name="default_sound">صوت پیش فرض</string>
+    <string name="brightness">نور صفحه</string>
+    <string name="nihtmode">حالت شب</string>
+    <string name="keep_screen_on">روشن نگه داشتن صفحه نمایش</string>
+    <string-array name="arabicfontsname">
+        <item>القلم</item>
+        <item>رز</item>
+    </string-array>
+    <string-array name="arabicfontscachename">
+        <item>Al Qalam Quran.ttf</item>
+        <item>ZAR New.ttf</item>
+    </string-array>
+    <string-array name="farsicfontsname">
+        <item>نازنین</item>
+        <item>ایران سنس</item>
+        <item>میترا</item>
+        <item>کودک</item>
+    </string-array>
+    <string-array name="farsicfontscachename">
+        <item>BNazanin.TTF</item>
+        <item>IRANSansRegular.ttf</item>
+        <item>BMITRA.TTF</item>
+        <item>KOODAK.TTF</item>
+    </string-array>
+    <string-array name="sure_text_options">
+        <item>اشتراک گذاری</item>
+        <item>کپی</item>
+        <item>نشانه گذاری</item>
+    </string-array>
+    <string-array name="pages">
+        <item>دانلود</item>
+        <item>جستجو</item>
+        <item>صفحه اصلی</item>
+        <item>نشان شده ها</item>
+        <item>تنظیمات</item>
+    </string-array>
+</resources>

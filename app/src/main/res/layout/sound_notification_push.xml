@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="73sp"
+    android:weightSum="24"
+    android:layoutDirection="ltr">
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_drawer_quran"
+        android:scaleType="fitXY"
+        ></ImageView>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        ></ImageView>
+
+    <Button
+        android:id="@+id/previous"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:text="prev"
+        android:layout_gravity="center"
+        ></Button>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        ></ImageView>
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:id="@+id/pause"
+        android:text="play/pause"
+        android:layout_gravity="center"
+        ></Button>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        ></ImageView>
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:id="@+id/next"
+        android:text="next"
+        android:layout_gravity="center"
+        ></Button>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        ></ImageView>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:id="@+id/aye_sura_notification"
+        android:text="آیه 23 سوره توحید"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+    </TextView>
+</LinearLayout>
